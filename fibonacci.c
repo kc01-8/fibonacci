@@ -14,24 +14,24 @@ int Fib(int n){
 
 int main(){
     int i;
-    int tnd;
-    char tta = 'n';
+    int tn;
+    char ta = 'n';
 
     printf("Print the Fibonacci sequence x times (enter a number):\n");
-    scanf("%d", &tnd);
-    printf("\nYou chose %d times.\n", tnd);
+    scanf("%d", &tn);
+    printf("\nYou chose %d times.\n", tn);
     printf("Print each as a new line? (default in one line, y / n):\n");
-    scanf(" %c", &tta);
+    scanf(" %c", &ta);
 
-    if(tta == 'y' || tta == 'Y'){
+    if(ta == 'y' || ta == 'Y'){
         printf("1\n");
-        for (i = 2; i < tnd+1; i++){
+        for (i = 2; i < tn+1; i++){
             int j = Fib(i);
             printf("%d\n", j);
         }
     } else{
         printf("1, ");
-        for (i = 2; i < tnd+1; i++){
+        for (i = 2; i < tn+1; i++){
             int j = Fib(i);
             printf("%d, ", j);
         }
